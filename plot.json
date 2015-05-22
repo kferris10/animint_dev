@@ -1,0 +1,306 @@
+{
+ "geoms": {
+ "geom1_point_sepal": {
+ "geom": "point",
+"classed": "geom1_point_sepal",
+"aes": {
+ "x": "Sepal.Length",
+"y": "Sepal.Width",
+"colour": "Species",
+"clickSelects": "Species" 
+},
+"params": {
+ "na.rm": false 
+},
+"subset_order": [],
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"clickSelects": "factor",
+"PANEL": "integer",
+"fill": "rgb" 
+},
+"PANEL": 1,
+"chunks": 1,
+"total": 1,
+"chunk_order": [],
+"nest_order": [] 
+},
+"geom2_point_petal": {
+ "geom": "point",
+"classed": "geom2_point_petal",
+"aes": {
+ "x": "Petal.Length",
+"y": "Petal.Width",
+"colour": "Species",
+"showSelected": "Species" 
+},
+"params": {
+ "na.rm": false 
+},
+"subset_order": [
+ "showSelected" 
+],
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"showSelected": "factor",
+"PANEL": "integer",
+"fill": "rgb" 
+},
+"PANEL": 1,
+"chunks": 1,
+"total": 1,
+"chunk_order": [],
+"nest_order": [
+ "showSelected" 
+] 
+} 
+},
+"selectors": {
+ "Species": {
+ "selected": "setosa",
+"type": "multiple",
+"update": [
+ "geom1_point_sepal",
+"geom2_point_petal" 
+] 
+} 
+},
+"plots": {
+ "sepal": {
+ "strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":      0,
+"right":      0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [      1 ],
+"height_proportion": [      1 ] 
+},
+"geoms": [
+ "geom1_point_sepal" 
+],
+"axis1": {
+ "x": [
+ 0.22222,
+0.47475,
+0.72727,
+0.9798 
+],
+"xlab": [
+ "5",
+"6",
+"7",
+"8" 
+],
+"xrange": [   4.12,   8.08 ],
+"xline": true,
+"xticks": true,
+"y": [
+ 0.045455,
+0.23485,
+0.42424,
+0.61364,
+0.80303,
+0.99242 
+],
+"ylab": [
+ "2.0",
+"2.5",
+"3.0",
+"3.5",
+"4.0",
+"4.5" 
+],
+"yrange": [   1.88,   4.52 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "Sepal.Length",
+"xanchor": "middle",
+"xangle":      0,
+"ytitle": "Sepal.Width",
+"yanchor": "end",
+"yangle":      0,
+"xlabs": [
+ "5",
+"6",
+"7",
+"8" 
+],
+"ylabs": [
+ "2.0",
+"2.5",
+"3.0",
+"3.5",
+"4.0",
+"4.5" 
+],
+"legend": {
+ "Species": {
+ "guide": "legend",
+"geoms": "point",
+"title": "Species",
+"entries": [
+ {
+ "pointcolour": "#619CFF",
+"pointshape":     16,
+"pointsize":      2,
+"label": [ "virginica" ] 
+},
+{
+ "pointcolour": "#00BA38",
+"pointshape":     16,
+"pointsize":      2,
+"label": [ "versicolor" ] 
+},
+{
+ "pointcolour": "#F8766D",
+"pointshape":     16,
+"pointsize":      2,
+"label": [ "setosa" ] 
+} 
+] 
+} 
+},
+"title": "Sepal Data",
+"options": {
+ "width":    400,
+"height":    400 
+} 
+},
+"petal": {
+ "strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":      0,
+"right":      0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [      1 ],
+"height_proportion": [      1 ] 
+},
+"geoms": [
+ "geom2_point_petal" 
+],
+"axis1": {
+ "x": [
+ 0.19954,
+0.5077,
+0.81587 
+],
+"xlab": [
+ "2",
+"4",
+"6" 
+],
+"xrange": [  0.705,  7.195 ],
+"xline": true,
+"xticks": true,
+"y": [
+ 0.0075758,
+0.19697,
+0.38636,
+0.57576,
+0.76515,
+0.95455 
+],
+"ylab": [
+ "0.0",
+"0.5",
+"1.0",
+"1.5",
+"2.0",
+"2.5" 
+],
+"yrange": [  -0.02,   2.62 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "Petal.Length",
+"xanchor": "middle",
+"xangle":      0,
+"ytitle": "Petal.Width",
+"yanchor": "end",
+"yangle":      0,
+"xlabs": [
+ "2",
+"4",
+"6" 
+],
+"ylabs": [
+ "0.0",
+"0.5",
+"1.0",
+"1.5",
+"2.0",
+"2.5" 
+],
+"legend": {
+ "Species": {
+ "guide": "legend",
+"geoms": "point",
+"title": "Species",
+"entries": [
+ {
+ "pointcolour": "#619CFF",
+"pointshape":     16,
+"pointsize":      2,
+"label": [ "virginica" ] 
+},
+{
+ "pointcolour": "#00BA38",
+"pointshape":     16,
+"pointsize":      2,
+"label": [ "versicolor" ] 
+},
+{
+ "pointcolour": "#F8766D",
+"pointshape":     16,
+"pointsize":      2,
+"label": [ "setosa" ] 
+} 
+] 
+} 
+},
+"title": "Petal Data",
+"options": {
+ "width":    400,
+"height":    400 
+} 
+} 
+},
+"title": "My Animint Plot" 
+}
